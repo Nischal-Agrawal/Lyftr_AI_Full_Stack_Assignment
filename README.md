@@ -8,11 +8,12 @@ A production-grade, highly resilient LLM Chatbot application engineered with **F
 
 | Service | Deployment Target | Live URL |
 | :--- | :--- | :--- |
-| **Frontend Web App** | Vercel / Render | `https://lyftr-chatbot-frontend.vercel.app` *(Replace with live deployed URL)* |
-| **Backend API** | Render / Railway | `https://lyftr-chatbot-backend.onrender.com` *(Replace with live deployed URL)* |
-| **Health Check Endpoint** | Backend Public URL | `https://lyftr-chatbot-backend.onrender.com/health` |
-| **Interactive API Docs** | Swagger / OpenAPI | `https://lyftr-chatbot-backend.onrender.com/docs` |
-| **Demo Video (2–3 min)** | Loom / YouTube | `https://www.loom.com/share/...` *(Replace with live recording link)* |
+| **Frontend Web App** | Vercel | [https://lyftr-chatbot-frontend.vercel.app](https://lyftr-chatbot-frontend.vercel.app) |
+| **Backend API** | Render | [https://lyftr-chatbot-backend.onrender.com](https://lyftr-chatbot-backend.onrender.com) |
+| **Health Check Endpoint** | Render Backend Public URL | [https://lyftr-chatbot-backend.onrender.com/health](https://lyftr-chatbot-backend.onrender.com/health) |
+| **Interactive API Docs** | Swagger / OpenAPI | [https://lyftr-chatbot-backend.onrender.com/docs](https://lyftr-chatbot-backend.onrender.com/docs) |
+| **GitHub Repository** | GitHub | [https://github.com/Nischal-Agrawal/Lyftr_AI_Full_Stack_Assignment](https://github.com/Nischal-Agrawal/Lyftr_AI_Full_Stack_Assignment) |
+| **Demo Video (2–3 min)** | Loom / YouTube / Drive | `https://www.loom.com/share/...` *(Insert recorded demo link here)* |
 
 ---
 
@@ -24,8 +25,8 @@ Start the entire multi-service stack with a single command:
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/lyftr-ai-fullstack.git
-cd lyftr-ai-fullstack
+git clone https://github.com/Nischal-Agrawal/Lyftr_AI_Full_Stack_Assignment.git
+cd Lyftr_AI_Full_Stack_Assignment
 
 # Create .env from template
 cp .env.example .env
