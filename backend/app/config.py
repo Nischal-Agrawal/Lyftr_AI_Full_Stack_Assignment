@@ -1,6 +1,6 @@
 import os
 from typing import List, Optional
-from pydantic import BaseModel
+from pydantic import BaseModel, field_validator
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
 
@@ -27,6 +27,13 @@ class Settings(BaseSettings):
         extra="ignore",
     )
 
+    @field_validator("LLM_MODEL", mode="before")
+    @classmethod
+    def normalize_model(cls, v: str) -> str:
+        if v and "gemini-2.0-flash" in v:
+            return v.replace("gemini-2.0-flash", "gemini-2.5-flash")
+        return v
+
     @property
     def cors_origins(self) -> List[str]:
         return [origin.strip() for origin in self.ALLOWED_ORIGINS.split(",") if origin.strip()]
@@ -40,6 +47,8 @@ class Settings(BaseSettings):
         for i, key in enumerate(raw_keys):
             key_id = f"key_{i + 1}"
             model = raw_models[i] if i < len(raw_models) and raw_models[i] else self.LLM_MODEL
+            if "gemini-2.0-flash" in model:
+                model = model.replace("gemini-2.0-flash", "gemini-2.5-flash")
             pool.append(KeyConfig(key_id=key_id, api_key=key, model=model))
         return pool
 
