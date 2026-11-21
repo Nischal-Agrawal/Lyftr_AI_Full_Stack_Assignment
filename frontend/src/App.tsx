@@ -7,6 +7,7 @@ import { FailoverLab } from './components/FailoverLab';
 import { Message, HealthStatus, SessionInfo, TelemetryStats } from './types';
 import { fetchHealth, sendChatMessage, fetchSessionMessages } from './api';
 import { Bot, Sparkles } from 'lucide-react';
+import { Analytics } from '@vercel/analytics/react';
 
 function generateNewSessionId(): string {
   // Always generates a fresh unique session ID
@@ -288,6 +289,7 @@ export const App: React.FC = () => {
           />
         </main>
       </div>
+      <Analytics />
     </div>
   );
 };
