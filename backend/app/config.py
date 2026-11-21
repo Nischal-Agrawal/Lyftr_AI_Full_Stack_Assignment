@@ -12,7 +12,7 @@ class KeyConfig(BaseModel):
 
 class Settings(BaseSettings):
     LLM_API_KEYS: str = "mock-key-alpha-12345,mock-key-beta-67890"
-    LLM_MODEL: str = "gemini/gemini-2.0-flash"
+    LLM_MODEL: str = "gemini/gemini-2.5-flash"
     LLM_MODELS: str = ""
     DATABASE_URL: str = "sqlite:////data/app.db"
     ALLOWED_ORIGINS: str = "http://localhost:3000,http://127.0.0.1:3000"

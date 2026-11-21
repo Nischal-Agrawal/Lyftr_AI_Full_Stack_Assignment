@@ -13,7 +13,7 @@ services:
       - ENABLE_FAILURE_SIMULATION=true
       - ALLOWED_ORIGINS=http://localhost:3000,http://127.0.0.1:3000
       - LLM_API_KEYS=${LLM_API_KEYS:-mock-key-alpha-12345,mock-key-beta-67890}
-      - LLM_MODEL=${LLM_MODEL:-gemini/gemini-2.0-flash}
+      - LLM_MODEL=${LLM_MODEL:-gemini/gemini-2.5-flash}
       - LLM_MODELS=${LLM_MODELS:-}
       - DEFAULT_SYSTEM_PROMPT=${DEFAULT_SYSTEM_PROMPT:-You are a helpful, concise AI assistant.}
       - LITELLM_CACHE_TYPE=${LITELLM_CACHE_TYPE:-local}

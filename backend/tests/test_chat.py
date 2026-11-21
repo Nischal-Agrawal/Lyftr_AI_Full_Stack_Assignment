@@ -31,7 +31,7 @@ def test_chat_happy_path(mock_acompletion, client):
 
     meta = data["metadata"]
     assert meta["resolution_source"] == "LIVE_INFERENCE"
-    assert meta["model"] == "gemini/gemini-2.0-flash"
+    assert meta["model"] == "gemini/gemini-2.5-flash"
     assert meta["key_id"] == "key_1"
     assert meta["fallback_attempts"] == 0
     assert meta["input_tokens"] == 42

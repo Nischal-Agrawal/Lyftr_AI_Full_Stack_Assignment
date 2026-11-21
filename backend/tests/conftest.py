@@ -16,7 +16,7 @@ temp_db.close()
 
 os.environ["DATABASE_URL"] = f"sqlite:///{temp_db_path}"
 os.environ["LLM_API_KEYS"] = "test-key-alpha,test-key-beta"
-os.environ["LLM_MODEL"] = "gemini/gemini-2.0-flash"
+os.environ["LLM_MODEL"] = "gemini/gemini-2.5-flash"
 os.environ["ENABLE_FAILURE_SIMULATION"] = "true"
 os.environ["LITELLM_CACHE_TYPE"] = "local"
 
