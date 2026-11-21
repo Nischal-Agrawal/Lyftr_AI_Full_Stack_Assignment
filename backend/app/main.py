@@ -47,11 +47,26 @@ app = FastAPI(
 # CORS configuration
 app.add_middleware(
     CORSMiddleware,
+    allow_origin_regex=r".*",
     allow_origins=settings.cors_origins if settings.cors_origins else ["*"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+
+@app.get("/")
+async def root():
+    return {
+        "status": "ok",
+        "service": "Lyftr AI LLM Gateway",
+        "endpoints": {
+            "health": "/health",
+            "chat": "/chat",
+            "messages": "/sessions/{session_id}/messages",
+            "docs": "/docs",
+        },
+    }
 
 
 # Global Exception Handlers to guarantee JSON {"detail": ...} for EVERY error
