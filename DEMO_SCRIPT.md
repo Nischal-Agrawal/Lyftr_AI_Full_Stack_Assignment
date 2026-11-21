@@ -2,6 +2,7 @@
 
 > **Time Target:** 2 minutes 30 seconds  
 > **Format:** Screen recording with voiceover (Loom / OBS / QuickTime / AI Video Generator)  
+> **Recorded Video Demo:** [https://youtu.be/WZdSwqE5Ejk](https://youtu.be/WZdSwqE5Ejk)  
 > **Live Frontend URL:** [https://lyftr-chatbot-frontend.vercel.app](https://lyftr-chatbot-frontend.vercel.app)  
 > **Live Backend API:** [https://lyftr-chatbot-backend.onrender.com](https://lyftr-chatbot-backend.onrender.com)  
 > **Repository:** [https://github.com/Nischal-Agrawal/Lyftr_AI_Full_Stack_Assignment](https://github.com/Nischal-Agrawal/Lyftr_AI_Full_Stack_Assignment)  

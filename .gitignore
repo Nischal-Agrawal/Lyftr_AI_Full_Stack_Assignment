@@ -52,3 +52,8 @@ dist-ssr/
 Thumbs.db
 .vscode/
 .idea/
+
+# Private & Internal Assignment Material
+_private/
+PROMPT.md
+*.pdf

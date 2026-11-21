@@ -13,7 +13,7 @@ A production-grade, highly resilient LLM Chatbot application engineered with **F
 | **Health Check Endpoint** | Render Backend Public URL | [https://lyftr-chatbot-backend.onrender.com/health](https://lyftr-chatbot-backend.onrender.com/health) |
 | **Interactive API Docs** | Swagger / OpenAPI | [https://lyftr-chatbot-backend.onrender.com/docs](https://lyftr-chatbot-backend.onrender.com/docs) |
 | **GitHub Repository** | GitHub | [https://github.com/Nischal-Agrawal/Lyftr_AI_Full_Stack_Assignment](https://github.com/Nischal-Agrawal/Lyftr_AI_Full_Stack_Assignment) |
-| **Demo Video (2–3 min)** | Loom / YouTube / Drive | `https://www.loom.com/share/...` *(Insert recorded demo link here)* |
+| **Demo Video (2–3 min)** | YouTube | [https://youtu.be/WZdSwqE5Ejk](https://youtu.be/WZdSwqE5Ejk) |
 
 ---
 
