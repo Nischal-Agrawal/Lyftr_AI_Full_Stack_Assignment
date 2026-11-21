@@ -60,6 +60,9 @@ async def root():
     return {
         "status": "ok",
         "service": "Lyftr AI LLM Gateway",
+        "model": settings.LLM_MODEL,
+        "keys_configured": len(settings.key_pool),
+        "key_prefixes": [k.api_key[:6] + "..." if len(k.api_key) > 6 else k.api_key for k in settings.key_pool],
         "endpoints": {
             "health": "/health",
             "chat": "/chat",

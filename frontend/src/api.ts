@@ -1,6 +1,10 @@
 import { ChatMetadata, HealthStatus } from './types';
 
-const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:8000';
+const API_BASE_URL =
+  import.meta.env.VITE_API_BASE_URL ||
+  (typeof window !== 'undefined' && (window.location.hostname.includes('vercel.app') || window.location.hostname.includes('render.com'))
+    ? 'https://lyftr-chatbot-backend.onrender.com'
+    : 'http://localhost:8000');
 
 export async function fetchHealth(): Promise<HealthStatus> {
   const res = await fetch(`${API_BASE_URL}/health`);
